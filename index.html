@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pluto Informative Website">
+  <title>CSS Topic - Background</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+  <link rel="manifest" href="./images/site.webmanifest">
+  <link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./images/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="./images/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <style>
+    body {
+      background-color: lightblue;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    article {
+      max-width: 48em;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+  </header>
+  <main>
+    <h1>CSS Topic - Background Image</h1>
+    <article>
+      <h2>Add a Basic Background</h2>
+      <p>In your css, simply add the path to your background. It can either be saved in your repository or be a web
+        link.</p>
+      <p>You should also choose a <i>background-color</i>.</p>
+      <p>Your background image will be working at this point, but will not look good. It's time to customize it!</p>
+      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="mdLpyeN" data-user="deem-"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/deem-/pen/mdLpyeN">
+            Background Image</a> by Benjamin (<a href="https://codepen.io/deem-">@deem-</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    </article>
+    <article>
+      <h2>Customize & Beautify your Background</h2>
+      <p>There is a large variety of tools for customizing your background image to make it look as good as possible.
+      </p>
+      <ul>
+        <li>
+          <h3>background-image</h3>
+          <p>Changes your background to an image. By default, it adds the image in its original
+            resolution, repeating to fill the screen if necessary.</p>
+        </li>
+        <li>
+          <h3>background-position</h3>
+          <p>By default, the background locks to the top-left of your screen. There are three ways
+            to change position: Length value (100px 5px), percentages (100% 5%), or keywords (top right)</p>
+        </li>
+        <li>
+          <h3>background-size</h3>
+          <p>There are two keywords that can be used: <i>cover</i> and <i>contain</i>. <i>Cover</i>
+            tells the browser to make sure the image always covers the entire screen, even if it has to stretch or crop
+            the image. <i>Contain</i> will always show the entire image, even if it leaves blank space on the sides or
+            bottom.</p>
+        </li>
+        <li>
+          <h3>background-repeat</h3>
+          <p>By default, the background image repeats if it is smaller than the browser window. You can disable or alter
+            that repetition with this property. <i>repeat-x</i> and <i>repeat-y</i> control if the image repeats along
+            those axis. <i>no-repeat</i> disables image repetition. <i>space</i> repeats the image in both directions
+            with even spaces to avoid cropping, and <i>round</i> will stretch or squish the images to fill available
+            space.</p>
+        </li>
+        <li>
+          <h3>background-attachment</h3>
+          <p>This specifies how the background moves when scrolling down the web page. <i>Scroll</i> is the default
+            value. The image scrolls along with the main view in a fixed position. <i>Fixed</i> stays in a fixed
+            location no matter what. It acts like a real window, staying in place no matter how your perspective
+            changes. <i>Local</i> scrolls both with the main view and the local view.</p>
+        </li>
+        <li>
+          <h3>background-clip</h3>
+          <p>background-clip lets you control how far a background image or color extends beyond an element's padding or
+            content. There are four values which each change the appearance. <i>border-box</i> is the default value.
+            This allows the background to extend all the way to the outside edge of the element's border.
+            <i>padding-box</i> clips the background at the outside edge of the element's padding and does not let it
+            extend into the border. <i>content-box</i> clips the background at the edge of the content box.
+            <i>inherit</i> applies the background-clip setting of the parent to the selected element.
+          </p>
+        </li>
+        <li>
+          <h3>background-origin</h3>
+          <p>This defines where the background is painted. This has no effect if the background is fixed. The values are
+            the same as the four for <i>background-clip</i>, except it resizes the background rather than clipping it.
+          </p>
+        </li>
+        <li>
+          <h3>background-color</h3>
+          <p>The background-color property simply applies solid colors as background on an element. This can be done by
+            simply writing the name of the color, or by using a code (Hex, RGB, RGBa, HSL, or HSLa).</p>
+        </li>
+      </ul>
+    </article>
+  </main>
+
+</body>
+
+</html>
